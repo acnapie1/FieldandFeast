@@ -1,0 +1,411 @@
+/* CSS BY Abby Napier*/
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* CSS REST */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ROOT VARIABLES */
+:root{
+    --dk-blue:  #1F2A44;
+    --green: #76885B;
+    --gold:  #E5C185;
+    --linen:  #F8F4EC;
+    --dk-gray:  #2B2B2B;
+    --white:  #FAF9F6;
+}
+/* GLOBAL STYLES (mobile first/small) */
+body{
+    font-family: Playfair Display;
+    margin: auto;
+}
+h1{
+    font-weight: bold;
+    font-size: 4em;
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+h2{
+    font-size: 1.75em;
+}
+h3{
+    font-size: 1.25em;
+}
+p{
+    font-size: 1em;
+}
+header p{
+    text-align: center;
+    color: var(--white);
+    font-style: italic;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+header{
+    background-color: var(--dk-blue);
+}
+header img{
+    display: block;
+    margin: auto;
+}
+header li{
+    display: inline;
+    color: var(--dk-blue);
+    padding: 0 1rem;
+    font-size: 1.25em;
+}
+header ul{
+    background-color: var(--gold);
+    text-align: center;
+    padding: 1rem;
+}
+header li a:link, header li a:visited,header li a:hover, header li a:active{
+    color: var(--dk-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+main{
+    background-color: var(--white);
+}
+#aboutUs{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 3px solid var(--gold);
+}
+#offerings{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 3px solid var(--gold);
+}
+#offerings h3{
+    font-weight: bold;
+    margin: .25em 0;
+}
+.offeringsGrid{
+    color: var(--white);
+    display: grid;
+    gap: 3%;
+    padding-top: .75em;
+    padding-bottom: 1rem;
+}
+.offerings1{
+    background-color: var(--green);
+    padding: .5rem;
+    border-radius: 10px;
+    grid-row: 1/span 1;
+    grid-column: 1/ span 1;
+}
+.offerings2{
+    background-color: var(--green);
+    padding: .5rem;
+    border-radius: 10px;
+    grid-row: 2/span 1;
+    grid-column: 1/ span 1;
+}
+.offerings3{
+    background-color: var(--green);
+    padding: .5rem;
+    border-radius: 10px;
+    grid-row: 3/span 1;
+    grid-column: 1/ span 1;
+}
+#gallery{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 3px solid var(--gold);
+}
+
+#gallery h2{
+    margin-bottom: .50em;
+}
+.galleryGrid{
+    display: grid;
+    margin-top: 1em;
+}
+.gallery1{
+    box-shadow: 2px 2px 10px 2px var(--dk-gray);
+    margin: .5rem auto;
+    text-align: center;
+    width: 600px;
+    border-radius: 5px;
+    font-style: italic;
+    padding-bottom: 1rem;
+}
+.gallery2{
+    box-shadow: 2px 2px 10px 2px var(--dk-gray);
+    margin: .5rem auto;
+    text-align: center;
+    width: 600px;
+    border-radius: 5px;
+    font-style: italic;
+    padding-bottom: 1rem;
+}
+.gallery3{
+    box-shadow: 2px 2px 10px 2px var(--dk-gray);
+    margin: .5rem auto;
+    text-align: center;
+    width: 600px;
+    border-radius: 5px;
+    font-style: italic;
+    padding-bottom: 1rem;
+}
+.gallery4{
+    box-shadow: 2px 2px 10px 2px var(--dk-gray);
+    margin: .5rem auto;
+    text-align: center;
+    width: 600px;
+    border-radius: 5px;
+    font-style: italic;
+    padding-bottom: 1rem;
+}
+.gallery5{
+    box-shadow: 2px 2px 10px 2px var(--dk-gray);
+    margin: .5rem auto;
+    text-align: center;
+    width: 600px;
+    border-radius: 5px;
+    font-style: italic;
+    padding-bottom: 1rem;
+}
+.gallery6{
+    background-color: var(--green);
+    padding: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+.gallery6 a:link, .gallery6 a:visited,.gallery6 a:hover, .gallery6 a:active{
+    color: var(--white);
+    font-weight: bold;
+    text-decoration: none;
+}
+footer{
+    background-color: var(--dk-blue);
+    padding: 3rem;
+    margin-top: 1rem;
+    color: var(--white);
+    text-align: center;
+    line-height: 175%;
+}
+footer a:link, footer a:visited, footer a:hover, footer a:active{
+    color: var(--gold);
+    text-decoration: none;
+}
+#links{
+    margin-top: -1.45rem;
+    line-height: 500%;
+}
+#gallery picture{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* MEDIA QUERY (medium) */
+@media all and (min-width: 600px){
+    header li{
+        padding: 0 3rem;
+    }
+    .galleryGrid{
+        column-gap: .20rem;
+        margin: 0;
+    }
+    .gallery1, .gallery2, .gallery3, .gallery4, .gallery5{
+        width: 600px;
+    }
+    .gallery1{
+        grid-column: 1/ span1;
+        grid-row: 1/ span 1;
+    }
+    .gallery2{
+        grid-column: 2/ span1;
+        grid-row: 1/ span 1;
+    }
+    .gallery3{
+        grid-column: 1/ span1;
+        grid-row: 2/ span 1;
+    }
+    .gallery4{
+        grid-column: 2/ span1;
+        grid-row: 2/ span 1;
+    }
+    .gallery5{
+        grid-column: 1/ span1;
+        grid-row: 3/ span 1;
+    }
+    .gallery6{
+        grid-row: 4/ span 2;
+        grid-column: 1/ span 2;
+    }
+    .offerings1{
+        grid-row: 1/ span 1;
+        grid-column: 1/ span 1;
+    }
+    .offerings2{
+        grid-row: 1/ span 1;
+        grid-column: 2/ span 1;
+    }
+    .offerings3{
+        grid-row: 2/ span 2;
+        grid-column: 1/ span 2;
+    }
+    
+}
+/* MEDIA QUERY (large) */
+@media all and (min-width: 900px){
+    header li{
+        padding: 0 6.75rem;
+    }
+    .galleryGrid{
+        margin: 0;
+    }
+    .gallery1, .gallery2, .gallery3, .gallery4, .gallery5{
+        width: 300px;
+    }
+    .gallery1{
+        grid-column: 1/ span1;
+        grid-row: 1/ span 1;
+    }
+    .gallery2{
+        grid-column: 2/ span1;
+        grid-row: 1/ span 1;
+    }
+    .gallery3{
+        grid-column: 3/ span 1;
+        grid-row: 1/ span 1;
+    }
+    .gallery4{
+        grid-column: 1/ span1;
+        grid-row: 2/ span 1;
+    }
+    .gallery5{
+        grid-column: 2/ span1;
+        grid-row: 2/ span 1;
+    }
+    .gallery6{
+        grid-row: 4/ span 2;
+        grid-column: 1/ span 3;
+    }
+    .offerings1{
+        grid-row: 1/ span 1;
+        grid-column: 1/ span 1;
+    }
+    .offerings2{
+        grid-row: 1/ span 1;
+        grid-column: 2/ span 1;
+    }
+    .offerings3{
+        grid-row: 2/ span 2;
+        grid-column: 1/ span 2;
+    }
+    
+}
+/* MEDIA QUERY (xl) */
+@media all and (min-width: 1200px){
+    
+    header li{
+        padding: 0 8rem;
+    }
+    main{
+        padding: 1em 9em 5em 9em;
+    }
+    .gallery1, .gallery2, .gallery3, .gallery4, .gallery5{
+        width: 200px;
+    }
+    .galleryGrid{
+        margin: 0;
+    }
+    .gallery1, .gallery2, .gallery3, .gallery4, .gallery5{
+        width: 200px;
+    }
+    .gallery1{
+        grid-column: 1/ span1;
+        grid-row: 1/ span 1;
+    }
+    .gallery2{
+        grid-column: 2/ span1;
+        grid-row: 1/ span 1;
+    }
+    .gallery3{
+        grid-column: 3/ span 1;
+        grid-row: 1/ span 1;
+    }
+    .gallery4{
+        grid-column: 1/ span1;
+        grid-row: 2/ span 1;
+    }
+    .gallery5{
+        grid-column: 2/ span1;
+        grid-row: 2/ span 1;
+    }
+    .gallery6{
+        grid-row: 4/ span 2;
+        grid-column: 1/ span 3;
+    }
+    .offerings1{
+        grid-row: 1/ span 1;
+        grid-column: 1/ span 1;
+    }
+    .offerings2{
+        grid-row: 1/ span 1;
+        grid-column: 2/ span 1;
+    }
+    .offerings3{
+        grid-row: 2/ span 2;
+        grid-column: 1/ span 2;
+    }
+
+
+}
